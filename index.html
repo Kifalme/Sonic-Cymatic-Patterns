@@ -1,0 +1,586 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.5">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'Helvetica Neue'; color: #e8e1d9; -webkit-text-stroke: #e8e1d9}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'Helvetica Neue'; color: #e8e1d9; -webkit-text-stroke: #e8e1d9; min-height: 18.0px}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html lang="en"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;title&gt;Sonic Cymatic Patterns&lt;/title&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;meta name="description" content="Discover the unique vibrational signature of your name through realistic cymatic patterns."&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;!-- YOUR ADSENSE CODE --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2664173577712699" crossorigin="anonymous"&gt;&lt;/script&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=IBM+Plex+Mono:wght@300;400;500&amp;display=swap" rel="stylesheet"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;style&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>:root {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>--black: #000000;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>--white: #ffffff;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>--gray-dark: #0a0a0a;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>--gray-mid: #1a1a1a;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>* { margin: 0; padding: 0; box-sizing: border-box; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>body {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-family: 'IBM Plex Mono', monospace;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background: var(--black);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color: var(--white);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>min-height: 100vh;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>overflow-x: hidden;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.font-display { font-family: 'Bebas Neue', sans-serif; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>/* Noise overlay */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.noise-overlay {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>position: fixed; inset: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>opacity: 0.04; pointer-events: none; z-index: 1000;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>/* Scanlines */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.scanlines {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>position: fixed; inset: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0, 0, 0, 0.15) 2px, rgba(0, 0, 0, 0.15) 4px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>pointer-events: none; z-index: 999;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>/* Nature creatures container */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.creatures-container { position: fixed; inset: 0; pointer-events: none; z-index: 5; overflow: hidden; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.creature { position: absolute; opacity: 0.07; transition: opacity 0.5s ease; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.creature svg { fill: var(--white); }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>@keyframes flyAcross {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>0% { transform: translateX(-100px) translateY(0); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>25% { transform: translateX(25vw) translateY(-20px); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>50% { transform: translateX(50vw) translateY(10px); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>75% { transform: translateX(75vw) translateY(-15px); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>100% { transform: translateX(calc(100vw + 100px)) translateY(0); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>@keyframes floatAround {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>0%, 100% { transform: translate(0, 0) rotate(0deg); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>25% { transform: translate(10px, -15px) rotate(5deg); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>50% { transform: translate(-5px, -25px) rotate(-3deg); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>75% { transform: translate(-15px, -10px) rotate(2deg); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>@keyframes beeZip {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>0%, 100% { transform: translate(0, 0); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>20% { transform: translate(30px, -20px); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>40% { transform: translate(50px, 10px); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>60% { transform: translate(20px, 30px); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>80% { transform: translate(-10px, 10px); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.bird { animation: flyAcross linear infinite; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.bee { animation: beeZip 4s ease-in-out infinite; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.static-creature { animation: floatAround 8s ease-in-out infinite; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>/* Cymatic container */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.cymatic-plate {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>position: relative; width: 100%; max-width: 520px; aspect-ratio: 1;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background: var(--gray-dark); border: 2px solid var(--white); overflow: hidden;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.cymatic-plate::before {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>content: ''; position: absolute; inset: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background: radial-gradient(circle at center, transparent 40%, rgba(0,0,0,0.9) 100%);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>pointer-events: none; z-index: 10;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.vibration-source {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>width: 20px; height: 20px; border-radius: 50%; background: var(--white);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>z-index: 20; opacity: 0; transition: opacity 0.3s ease;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.vibration-source.active { opacity: 1; animation: pulse 0.5s ease-out infinite; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>@keyframes pulse {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>0% { transform: translate(-50%, -50%) scale(1); opacity: 1; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>100% { transform: translate(-50%, -50%) scale(2); opacity: 0; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>/* Input styling */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.input-name {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background: transparent; border: 2px solid var(--white); color: var(--white);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>padding: 1rem 1.5rem; font-family: 'IBM Plex Mono', monospace; font-size: 1rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>text-align: center; letter-spacing: 0.15em; text-transform: uppercase; outline: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>transition: all 0.2s ease; width: 100%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.input-name:focus { background: rgba(255, 255, 255, 0.1); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.input-name::placeholder { color: rgba(255, 255, 255, 0.4); text-transform: none; letter-spacing: 0.05em; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.btn-generate {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background: var(--white); color: var(--black); border: 2px solid var(--white);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>padding: 1rem 2rem; font-family: 'Bebas Neue', sans-serif; font-size: 1.25rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>letter-spacing: 0.2em; cursor: pointer; transition: all 0.2s ease; text-transform: uppercase;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.btn-generate:hover { background: var(--black); color: var(--white); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.btn-generate:active { transform: scale(0.98); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.btn-generate:disabled { opacity: 0.4; cursor: not-allowed; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>/* Tech grid overlay */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.tech-grid {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>position: absolute; inset: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background-size: 40px 40px; pointer-events: none; z-index: 2;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.freq-display { font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; letter-spacing: 0.1em; color: rgba(255, 255, 255, 0.5); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.freq-value { color: var(--white); font-weight: 500; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.info-card { background: var(--gray-mid); border: 1px solid rgba(255, 255, 255, 0.1); padding: 1rem; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.info-label { font-size: 0.625rem; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255, 255, 255, 0.4); margin-bottom: 0.25rem; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.info-value { font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; letter-spacing: 0.05em; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>@keyframes fadeUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.fade-up { animation: fadeUp 0.6s ease-out forwards; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.delay-1 { animation-delay: 0.1s; opacity: 0; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.delay-2 { animation-delay: 0.2s; opacity: 0; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.delay-3 { animation-delay: 0.3s; opacity: 0; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.delay-4 { animation-delay: 0.4s; opacity: 0; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>/* Ad container styling */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.ad-container { width: 100%; max-width: 520px; min-height: 90px; margin: 0 auto 2rem auto; background: rgba(255,255,255,0.02); display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05); }</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.ripple-container { position: absolute; inset: 0; pointer-events: none; z-index: 15; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>@keyframes rippleOut { 0% { transform: translate(-50%, -50%) scale(0); opacity: 0.5; } 100% { transform: translate(-50%, -50%) scale(3); opacity: 0; } }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.ripple { position: absolute; top: 50%; left: 50%; width: 100px; height: 100px; border: 1px solid var(--white); border-radius: 50%; animation: rippleOut 1.5s ease-out infinite; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; } }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>@media (max-width: 640px) { .cymatic-plate { max-width: 320px; } }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;body&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="noise-overlay"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="scanlines"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="creatures-container" id="creaturesContainer"&gt;&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;main class="relative z-10 min-h-screen flex flex-col"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;header class="text-center pt-12 pb-8 px-4 fade-up"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;h1 class="font-display text-5xl md:text-7xl lg:text-8xl tracking-wider mb-3"&gt;SONIC CYMATIC PATTERNS&lt;/h1&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;p class="text-xs md:text-sm tracking-widest uppercase opacity-50"&gt;The vibrational signature of your name&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="flex-1 flex flex-col items-center justify-center px-4 pb-12"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="cymatic-plate mb-6 fade-up delay-1"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="tech-grid"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;canvas id="cymaticCanvas"&gt;&lt;/canvas&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="vibration-source" id="vibrationSource"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="ripple-container" id="rippleContainer"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="freq-display mb-8 fade-up delay-2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>FREQUENCY: &lt;span class="freq-value" id="freqDisplay"&gt;AWAITING INPUT&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="w-full max-w-md mb-8 fade-up delay-3"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="flex flex-col sm:flex-row gap-2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;input type="text" id="nameInput" class="input-name flex-1" placeholder="Enter your name" maxlength="30" autocomplete="off" spellcheck="false"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;button id="generateBtn" class="btn-generate whitespace-nowrap"&gt;Generate&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div id="patternInfo" class="w-full max-w-md grid grid-cols-3 gap-2 mb-12 fade-up delay-4 hidden"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="info-card text-center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="info-label"&gt;Symmetry&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="info-value" id="symmetryVal"&gt;--&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="info-card text-center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="info-label"&gt;Harmonics&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="info-value" id="harmonicsVal"&gt;--&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="info-card text-center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="info-label"&gt;Pattern&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="info-value" id="patternVal"&gt;--&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;!-- ADSENSE AD SPACE --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="ad-container"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">         </span>&lt;!-- Ad will appear here automatically --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">         </span>&lt;ins class="adsbygoogle"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>style="display:block"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>data-ad-client="ca-pub-2664173577712699"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>data-ad-slot="AUTO_FILLED_IF_LINKED"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>data-ad-format="auto"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>data-full-width-responsive="true"&gt;&lt;/ins&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">         </span>&lt;script&gt;(adsbygoogle = window.adsbygoogle || []).push({});&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;p class="text-center max-w-lg text-xs tracking-wider leading-relaxed opacity-40 px-4"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>Enter your name and click generate to reveal its unique sonic geometry.<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>Each character vibrates at a specific frequency, creating interference patterns<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>that manifest as geometric forms — the sonic fingerprint of your name.</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;footer class="text-center py-6 text-xs tracking-widest opacity-30"&gt;SONIC CYMATIC PATTERNS 2024&lt;/footer&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/main&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;!-- SVG Templates --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;template id="birdTemplate"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;svg viewBox="0 0 100 60" width="60" height="36"&gt;&lt;path d="M50 30 Q30 10 5 25 Q25 30 30 35 L50 30 M50 30 Q70 10 95 25 Q75 30 70 35 L50 30 M48 32 Q50 40 52 32"/&gt;&lt;/svg&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/template&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;template id="beeTemplate"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;svg viewBox="0 0 60 40" width="40" height="27"&gt;&lt;ellipse cx="30" cy="20" rx="18" ry="10"/&gt;&lt;ellipse cx="30" cy="20" rx="18" ry="10" fill="none" stroke="white" stroke-width="2"/&gt;&lt;line x1="18" y1="20" x2="22" y2="20" stroke="black" stroke-width="3"/&gt;&lt;line x1="26" y1="20" x2="30" y2="20" stroke="black" stroke-width="3"/&gt;&lt;line x1="34" y1="20" x2="38" y2="20" stroke="black" stroke-width="3"/&gt;&lt;path d="M20 12 Q15 5 10 8" fill="none" stroke="white" stroke-width="1.5"/&gt;&lt;path d="M40 12 Q45 5 50 8" fill="none" stroke="white" stroke-width="1.5"/&gt;&lt;circle cx="38" cy="18" r="2" fill="black"/&gt;&lt;/svg&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/template&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// ============================================</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// INITIALIZATION</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// ============================================</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const canvas = document.getElementById('cymaticCanvas');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const ctx = canvas.getContext('2d');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const nameInput = document.getElementById('nameInput');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const generateBtn = document.getElementById('generateBtn');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const freqDisplay = document.getElementById('freqDisplay');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const vibrationSource = document.getElementById('vibrationSource');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const rippleContainer = document.getElementById('rippleContainer');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const patternInfo = document.getElementById('patternInfo');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const symmetryVal = document.getElementById('symmetryVal');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const harmonicsVal = document.getElementById('harmonicsVal');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const patternVal = document.getElementById('patternVal');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const creaturesContainer = document.getElementById('creaturesContainer');</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>let animationId = null;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>let particles = [];</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>let currentParams = null;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>let isVibrating = false;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>let time = 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>let canvasWidth = 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>let canvasHeight = 0;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// ============================================</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// NATURE CREATURES</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// ============================================</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>function createCreatures() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const birdTemplate = document.getElementById('birdTemplate');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const beeTemplate = document.getElementById('beeTemplate');</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const staticBirdPositions = [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ x: '5%', y: '15%' }, { x: '12%', y: '60%' }, { x: '88%', y: '20%' },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ x: '92%', y: '70%' }, { x: '75%', y: '85%' }, { x: '20%', y: '80%' }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>];</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>staticBirdPositions.forEach((pos, i) =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const bird = document.createElement('div');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>bird.className = 'creature static-creature';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>bird.style.left = pos.x; bird.style.top = pos.y;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>bird.style.animationDelay = `${i * 0.5}s`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>bird.innerHTML = birdTemplate.innerHTML;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>creaturesContainer.appendChild(bird);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>});</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const beePositions = [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ x: '15%', y: '30%' }, { x: '85%', y: '45%' }, { x: '8%', y: '75%' },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ x: '80%', y: '12%' }, { x: '45%', y: '8%' }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>];</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>beePositions.forEach((pos, i) =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const bee = document.createElement('div');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>bee.className = 'creature bee';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>bee.style.left = pos.x; bee.style.top = pos.y;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>bee.style.animationDelay = `${i * 0.8}s`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>bee.innerHTML = beeTemplate.innerHTML;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>creaturesContainer.appendChild(bee);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>});</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>for (let i = 0; i &lt; 3; i++) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const bird = document.createElement('div');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>bird.className = 'creature bird';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>bird.style.top = `${15 + i * 25}%`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>bird.style.animationDuration = `${20 + i * 5}s`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>bird.style.animationDelay = `${i * 7}s`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>bird.innerHTML = birdTemplate.innerHTML;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>creaturesContainer.appendChild(bird);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>createCreatures();</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// ============================================</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// CANVAS SETUP</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// ============================================</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>function setupCanvas() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const rect = canvas.parentElement.getBoundingClientRect();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const dpr = window.devicePixelRatio || 1;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>canvasWidth = rect.width;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>canvasHeight = rect.height;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>canvas.width = canvasWidth * dpr;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>canvas.height = canvasHeight * dpr;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>canvas.style.width = canvasWidth + 'px';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>canvas.style.height = canvasHeight + 'px';</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>ctx.scale(dpr, dpr);</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>if (!isVibrating) { drawIdle(); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>setupCanvas();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>window.addEventListener('resize', setupCanvas);</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// ============================================</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// CYMATIC PHYSICS</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// ============================================</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>function analyzeName(name) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const chars = name.toLowerCase().split('');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>let freqSum = 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>chars.forEach((c, i) =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const code = c.charCodeAt(0);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>freqSum += (code - 96) * (i + 1);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const baseFreq = 200 + (freqSum % 400);</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const vowels = 'aeiou';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>let vowelCount = 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>chars.forEach(c =&gt; { if (vowels.includes(c)) vowelCount++; });</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const symmetry = Math.max(3, Math.min(12, chars.length * 2 - vowelCount + 3));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const uniqueChars = new Set(chars).size;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const harmonics = Math.max(2, Math.min(8, uniqueChars));</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const patternTypes = ['RADIAL', 'SPIRAL', 'CRYSTAL', 'FLUID', 'GEOMETRIC'];</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const patternIndex = Math.floor(freqSum % patternTypes.length);</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const waveComponents = [];</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>chars.forEach((c, i) =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const code = c.charCodeAt(0);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>waveComponents.push({</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>frequency: 1 + (code % 10) * 0.5,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>amplitude: 0.3 + (code % 7) * 0.1,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>phase: (i / chars.length) * Math.PI * 2</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>});</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>return { baseFreq, symmetry, harmonics, pattern: patternTypes[patternIndex], waveComponents, charCount: chars.length };</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>function initParticles() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>particles = [];</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const centerX = canvasWidth / 2;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const centerY = canvasHeight / 2;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const particleCount = 3000;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>for (let i = 0; i &lt; particleCount; i++) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const angle = Math.random() * Math.PI * 2;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const radius = Math.random() * Math.min(canvasWidth, canvasHeight) * 0.45;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>particles.push({</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>x: centerX + Math.cos(angle) * radius,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>y: centerY + Math.sin(angle) * radius,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>homeX: centerX + Math.cos(angle) * radius,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>homeY: centerY + Math.sin(angle) * radius,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>vx: 0, vy: 0,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>size: 1 + Math.random() * 1.5</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>function getNodalAmplitude(x, y, params, t) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const centerX = canvasWidth / 2;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const centerY = canvasHeight / 2;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const maxR = Math.min(canvasWidth, canvasHeight) * 0.45;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const nx = (x - centerX) / maxR;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const ny = (y - centerY) / maxR;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const r = Math.sqrt(nx * nx + ny * ny);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const theta = Math.atan2(ny, nx);</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>let amplitude = 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const m = params.symmetry;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const n = params.harmonics;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const radialNode = Math.cos(r * n * Math.PI + t * 0.5);</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>let angularNode = 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>for (let k = 1; k &lt;= m; k++) { angularNode += Math.cos(k * theta * 2 + t * 0.3 * k); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>angularNode /= m;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>amplitude = radialNode * angularNode;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>params.waveComponents.forEach((wave) =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const dist = Math.sqrt(nx * nx + ny * ny);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>amplitude += Math.sin(dist * wave.frequency * 10 + t * wave.frequency + wave.phase) * wave.amplitude * 0.3;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>});</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>return amplitude;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>function updateParticles(params, t) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const centerX = canvasWidth / 2;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const centerY = canvasHeight / 2;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const maxR = Math.min(canvasWidth, canvasHeight) * 0.45;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>particles.forEach(p =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const amplitude = getNodalAmplitude(p.x, p.y, params, t);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const epsilon = 2;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const ampX1 = getNodalAmplitude(p.x + epsilon, p.y, params, t);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const ampX2 = getNodalAmplitude(p.x - epsilon, p.y, params, t);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const ampY1 = getNodalAmplitude(p.x, p.y + epsilon, params, t);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const ampY2 = getNodalAmplitude(p.x, p.y - epsilon, params, t);</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const gradX = (ampX1 - ampX2) / (2 * epsilon);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const gradY = (ampY1 - ampY2) / (2 * epsilon);</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const forceStrength = 0.5;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>p.vx -= gradX * forceStrength + (p.x - p.homeX) * 0.001;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>p.vy -= gradY * forceStrength + (p.y - p.homeY) * 0.001;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const jitter = Math.abs(amplitude) * 2;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>p.vx += (Math.random() - 0.5) * jitter;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>p.vy += (Math.random() - 0.5) * jitter;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>p.vx *= 0.9; p.vy *= 0.9;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>p.x += p.vx; p.y += p.vy;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const dx = p.x - centerX;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const dy = p.y - centerY;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const dist = Math.sqrt(dx * dx + dy * dy);</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>if (dist &gt; maxR) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>const angle = Math.atan2(dy, dx);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>p.x = centerX + Math.cos(angle) * maxR;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>p.y = centerY + Math.sin(angle) * maxR;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>p.vx *= -0.5; p.vy *= -0.5;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>function renderParticles() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>ctx.fillStyle = '#0a0a0a';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>ctx.fillRect(0, 0, canvasWidth, canvasHeight);</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>ctx.fillStyle = '#ffffff';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>particles.forEach(p =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>ctx.beginPath();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>ctx.fill();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>});</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>if (currentParams &amp;&amp; isVibrating) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>ctx.strokeStyle = 'rgba(255, 255, 255, 0.05)';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>ctx.lineWidth = 0.5;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const centerX = canvasWidth / 2;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const centerY = canvasHeight / 2;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const maxR = Math.min(canvasWidth, canvasHeight) * 0.45;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>for (let r = 20; r &lt; maxR; r += 30) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>ctx.beginPath();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>ctx.arc(centerX, centerY, r + Math.sin(time * 2 + r * 0.1) * 3, 0, Math.PI * 2);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>ctx.stroke();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>function animate() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>if (currentParams &amp;&amp; isVibrating) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>time += 0.016;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>updateParticles(currentParams, time);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>renderParticles();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>animationId = requestAnimationFrame(animate);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// ============================================</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// VIBRATION EFFECTS</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// ============================================</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>function startVibration() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>isVibrating = true;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>vibrationSource.classList.add('active');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>rippleContainer.innerHTML = '';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>for (let i = 0; i &lt; 3; i++) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const ripple = document.createElement('div');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>ripple.className = 'ripple';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>ripple.style.animationDelay = `${i * 0.5}s`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>rippleContainer.appendChild(ripple);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>function stopVibration() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>isVibrating = false;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>vibrationSource.classList.remove('active');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>rippleContainer.innerHTML = '';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// ============================================</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// MAIN GENERATION (Triggered ONLY by Button)</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// ============================================</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>function generatePattern(name) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>if (!name.trim()) return;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>currentParams = analyzeName(name);</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>freqDisplay.textContent = `${currentParams.baseFreq} Hz`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>symmetryVal.textContent = `${currentParams.symmetry}-fold`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>harmonicsVal.textContent = currentParams.harmonics;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>patternVal.textContent = currentParams.pattern;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>patternInfo.classList.remove('hidden');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>initParticles();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>time = 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>startVibration();</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>setTimeout(() =&gt; { stopVibration(); }, 4000);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// ============================================</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// EVENT LISTENERS</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// ============================================</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>generateBtn.addEventListener('click', () =&gt; { generatePattern(nameInput.value); });</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>nameInput.addEventListener('keypress', (e) =&gt; { if (e.key === 'Enter') { generatePattern(nameInput.value); } });</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// ============================================</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// INITIALIZE</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// ============================================</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>function drawIdle() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>ctx.fillStyle = '#0a0a0a';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>ctx.fillRect(0, 0, canvasWidth, canvasHeight);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>ctx.strokeStyle = 'rgba(255, 255, 255, 0.03)';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>ctx.lineWidth = 0.5;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const gridSize = 20;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>for (let x = 0; x &lt; canvasWidth; x += gridSize) { ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, canvasHeight); ctx.stroke(); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>for (let y = 0; y &lt; canvasHeight; y += gridSize) { ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(canvasWidth, y); ctx.stroke(); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>ctx.fillStyle = 'rgba(255, 255, 255, 0.2)';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>ctx.font = '12px "IBM Plex Mono", monospace';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>ctx.textAlign = 'center';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>ctx.fillText('ENTER NAME TO BEGIN', canvasWidth / 2, canvasHeight / 2);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>animate();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>drawIdle();</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+</body>
+</html>
